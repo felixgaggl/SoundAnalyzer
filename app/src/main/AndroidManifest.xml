@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="startup.soundanalyzer">
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
+    <uses-sdk android:targetSdkVersion="15" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
     <application
@@ -20,5 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="my analysing activity" >
+        </activity>
+
+
     </application>
 </manifest>

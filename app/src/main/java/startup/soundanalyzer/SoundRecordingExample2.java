@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
@@ -277,7 +278,9 @@ public class SoundRecordingExample2 extends Activity {
                 }
                 case R.id.btnAnalyse:{
                     srcAppLog.logString("Start analysing");
-                    setContentView(R.layout.activity_analyse);
+                    Intent nextScreen = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(nextScreen);
+                    //setContentView(R.layout.activity_analyse);
 
                 }
             }
